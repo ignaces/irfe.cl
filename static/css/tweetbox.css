@@ -1,0 +1,55 @@
+#tweetbox {
+background-color:rgba(255,255,255, 0);
+background-repeat:repeat-x;
+margin:0 auto;
+margin-top:20px;
+margin-bottom:10px;
+width: 1000px;
+height: 24px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding-top: 4px;
+
+background-color:#5E5E5E;
+background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.1)));
+background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.1) 50%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+background-image:-moz-linear-gradient(top, rgba(0,0,0, 0.4) 0, rgba(0,0,0, 0.1) 50%, transparent 50%, rgba(0,0,0, 0.6) 100%);
+background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.1) 50%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+background-image:
+linear-gradient(
+top,
+rgba(255, 255, 255, 0.5) 0,
+rgba(255, 255, 255, 0.1) 50%,
+transparent 50%,
+rgba(255, 255, 255, 0.1) 100%
+);
+border:1px outset #333;
+-webkit-box-shadow:inset -1px 0 1px rgba(255, 255, 255, 0.6), inset 1px 0 1px rgba(255, 255, 255, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.2);
+-moz-box-shadow:inset -1px 0 1px rgba(255, 255, 255, 0.6), inset 1px 0 1px rgba(255, 255, 255, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.2);
+box-shadow:
+inset -1px 0 1px rgba(255, 255, 255, 0.2),
+inset 1px 0 1px rgba(255, 255, 255, 0.2),
+inset 0 0 15px rgba(255, 255, 255, 0.2);
+
+}
+
+#tweet {
+height:24px;
+font: 14px 'Trebuchet MS', 'Lucida Grande', Sans-Serif;
+text-align: center;
+color: white;
+text-shadow: 0 0 1px white;
+width:1000px;
+text-align:center;
+-webkit-font-smoothing:antialiased;
+vertical-align:middle;
+}
+
+#tweet a {
+color:white;
+}
+
+ul {
+list-style:none;
+}
