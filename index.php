@@ -1,152 +1,99 @@
-<?php include 'static/include/variables.php' ?>
-<!DOCTYPE html>
-<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]> <!--> <html class=no-js lang=en> <!-- <![endif]-->
+ï»¿<!doctype html> 
+<html>
+<!-- DiseÃ±ado para WebKit Safari -->
+
 <head>
-<title><?php echo "$maintitle" ?> | <?php echo "$alfa" ?></title>
-<?php include 'static/frames/head_main.php'; ?>
-</head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" user-scalable="no"/>   
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	
+	<title>IRFE</title>
+	<meta name="description" content="PÃ¡gina de inicio de la Intranet del Instituto Regional Federico ErrÃ¡zuriz, proporciona informaciÃ³n Ãºtil y necesaria del colegio apenas se ingrese a la Internet desde algÃºn computador." />
+	<meta name="author" content="ignaciotrujillo" />
 
-<body class=page-frontpage>
-<!-- Aviso Javascript -->
-<p id=jsnotice>Javascript se encuentra deshabilitado. Este sitio requiere Javascript para el funcionamiento correcto. Porfavor <a href="http://enable-javascript.com/es/">habilite Javascript en su navegador.</a>!</p>
-<!-- Fin - Aviso Javascript -->
+	<link rel="stylesheet" href="estilov2.css" /> 
+    	<script src="jquery.js"></script> 
+	    <script src="modernizr-newest.min.js"></script>
+    	<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script> 
 
-<!-- Encabezado de página -->
-<header class=container-block id=page-header>
-<div class=container-inner>
-<div class=container-aligner>
-<!-- Logo de la página -->
-<h1 id=header-logo><a href=<?php echo "$website" ?> ><img height=65 style="margin-top:-15px;" src='./assets/logo.png'/></a></h1>
-<!-- Fin - Logo de la página -->
-<!-- Page navigation -->
-<?php include 'static/frames/nav.php'; ?>
-<!-- End - Page navigation -->
+    </head>
+
+<body>
+<script type="text/javascript" charset="utf-8">
+getTwitters('tweet', { 
+id: 'irfe', 
+count: 1, 
+enableLinks: true, 
+ignoreReplies: true, 
+clearContents: false,
+ template: '<a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">"%text%"</a></div>'
+
+});
+</script>
+<div id="tweet" align="center"></div>
+<!-- <div id="loadingtweet">cargando Ãºltimo tweet</div> -->
 </div>
-</div>
-</header>
-<!-- Fin - Encabezado de página -->
+
+<div class="god"><!-- importante god -->
+<div class="principal">
 
 <!-- Presentador -->
-<section class=slider-nivo id=page-slider>
-<div class=slider-container>
-<!--1--><img src=<?php echo "$slide1" ?> width=940 height=350 />
-<!--2--><a href=''><img src=<?php echo "$slide2" ?> width=940 height=350 title='#htmlcaption' /></a>
-<!--3--><a href='http://facebook.com/irfesantacruz'><img src=<?php echo "$slide3" ?> width=940 height=350 />
-</div>
+<script> 
+$(document).ready(function() {
+	$("#controls span").click(function() {
+		$("#cf img").removeClass("opaque");
+		
+		var imageToShow = $(this).attr("id").replace("for-", "");
+ 
+		console.log(imageToShow);
+		
+		$("#cf #"+imageToShow).addClass("opaque");
+		
+		$("#controls span").removeClass("selected");
+		$(this).addClass("selected");			
+	});
+});
+</script> 
+<div id="cf" class="shadow">
+<img id="image-1" src="box/1.png" class="opaque"/>
+	<img id="image-2" src="box/2.png"/> 
+	<img id="image-3" src="box/3.jpg" /> 
+	<img id="image-4" src="images/wall.jpg" /> 
+</div> 
 
-<div class=nivo-html-caption id=htmlcaption>
-Ganadores de las Olimpiadas de Actualidad
+<p id="controls"> 
+	<span class="selected" id="for-image-1"><img src="images/controls/1.png" /></span> 
+	<span id="for-image-2"><img src="images/controls/2.png" /></span> 
+	<span id="for-image-3"><img src="images/controls/3.png" /></span> 
+	<span id="for-image-4"><img src="images/controls/4.png" /></span> 
+    </p>
+    
 </div>
-</section>
-<!-- Fin - Presentador -->
-
-<!-- Cuerpo -->
-<section class=container-block id=page-body>
-<div class=container-inner>
-<!-- Título de la Página -->
-<header class=container-aligner id=page-title>
-<section class='widget-container widget-last-tweet'>
-<div class=widget-content>
-</div><br /><img style="margin:0 auto; margin-top:-26px;" height=20 src='assets/logo_twitter_withbird_1000_allblack.png' />
-</section>
-</header>
-<!-- Fin - Título de la Página -->
-</div>
-</section>
-<!-- Fin - Cuerpo -->
-
-<!-- Widgets -->
-<section class='container-block dark-skin' id=bottom-widgets>
-<div class=container-inner>
-<div class=container-aligner>
-
-<!-- Intereses -->
-<div class=layout-1-4>
-<section class='widget-container widget-tags-floated'>
-<h2 class=widget-heading>Intereses</h2>
-<div class=widget-content>
-<ul class=tags-floated-list>
-<li><a href="<?php echo "$link_alfa1" ?>"><?php echo "$alfa1" ?></a></li>
-<li><a href="<?php echo "$link_beta1one" ?>"><?php echo "$beta1one" ?></a></li>
-<li><a href="<?php echo "$link_beta2two" ?>"><?php echo "$beta2two" ?></a></li>
-<li><a href="<?php echo "$link_beta4" ?>"><?php echo "$beta4" ?></a></li>
-<li><a href="<?php echo "$link_gamma3one" ?>"><?php echo "$gamma3one" ?></a></li>
-<li><a href="<?php echo "$link_beta1three" ?>"><?php echo "$beta1three" ?></a></li>
-<li><a href="<?php echo "$link_alfa2" ?>"><?php echo "$alfa2" ?></a></li>
-<li><a href="<?php echo "$link_gamma2four" ?>"><?php echo "$gamma2" ?> <?php echo "$anio_actual" ?></a></li>
-</ul>
-</div>
-</section>
-</div>
-<!-- Fin - Intereses -->
-
-<!-- Links -->
-<div class=layout-1-4>
-<section class='widget-container widget-categories'>
-<h2 class=widget-heading>Links</h2>
-<div class=widget-content>
-<ul class='widget-list categories-list'>
-<!--1--><li><a href='http://twitter.com/irfe'><img src=./assets/logo_twitter.png /></a><span class=widget-hint>@irfe</span></li>
-<!--2--><li><a href='http://facebook.com/irfesantacruz'><img src=./assets/logo_facebook.png /></a><span class=widget-hint>irfesantacruz</span></li>
-</ul>
-</div>
-</section>
-</div>
-<!-- Fin - Links -->
-
-<!-- Galería de Fotos -->
-<div class=layout-1-4>
-<section class='widget-container widget-gallery'>
-<h2 class=widget-heading><?php echo "$gamma2" ?></h2>
-<div class=widget-content>
-</div>
-</section>
-</div>
-<!-- Fin - Galería de Fotos -->
+<!-- Fin Presentador -->
 
 
-<!-- Acerca de... -->
-<div class='layout-1-4 layout-last'>
-<!-- Widget text -->
-<section class='widget-container widget-text'>
-<h2 class=widget-heading>Nuestra Misi&oacuten</h2>
-<div class=widget-content>
-<p>Nuestro colegio pretende promover a un hombre integral, a un hombre que es imagen de Dios.</p><p><img src="./assets/logo.png" style="margin-top:-33px; float:right;" /><i>"Que nuestro hombre institutano descubra su misi&oacuten y utilice sus potenciales en servicio de la vida, por amor a la humanidad."</i></p>
+<div class="barradown">
+<!-- Cuadro de bÃºsqueda de Google -->
+<div class="googlebox" align="left">
+<form method="get" action="http://www.google.com/search">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="hidden" name="oe" value="UTF-8">
+<a href="http://google.cl"><img style="padding-top:2px;" src="images/google.png" alt="Buscar en Google" align="absmiddle" border="0"></a>
+<input align="absmiddle" type="text" name="q" size="15" maxlength="255" value="" autocomplete="off" autofocus>
+<input type="image" src="images/logo_lupa.png" align="absmiddle" name="btnG" value="">
+</form>
 </div>
-</section>
-</div>
-<!-- Fin - Acerca de... -->
-</div>
-</div>
-</section>
-<!-- Fin - Widgets -->
+<!-- Cuadro de bÃºsqueda de Google -->
 
-<!-- Footer -->
-<footer id=page-footer>
-<div class=container-aligner>
-<!-- Izquierda -->
-<section id=footer-left>
-&copy; Copyright <?php echo "$anio_actual" ?> <?php echo "$irfe" ?> - Derechos Reservados.
-</section>
-<!-- Derecha -->
-<section id=footer-right>
-Por <a href="http://twitter.com/ignaces"><?php echo "$author" ?>.</a> <?php echo "$version" ?>
-</section>
+</div><!-- class="barradown" -->
+
+<!-- quizÃ¡s, en el futuro 
+<div class="slogan" align="center"></div>
+<div class="footer" align="center">
 </div>
-</footer>
-<!-- Fin - Footer -->
-<!-- Fondos de la página -->
-<div id=theme-backgrounds>
-<img alt='Asset 6' data-color='#3490C3' src='./assets/backgrounds/6.jpg.pagespeed.ce.K7547yEF-s.jpg' width=1600 height=1200 />
-<img alt='Asset 7' data-color='#A3A60D' src='./assets/backgrounds/7.jpg.pagespeed.ce.CETi5UScmo.jpg' width=1600 height=1200 />
-<img alt='Asset 8' data-color='#CD141A' src='./assets/backgrounds/8.jpg.pagespeed.ce.GuyKwL-vmH.jpg' width=1600 height=1200 />
-</div>
-<div id=dark-overlay></div>
-<!-- Fin - Fondos de la página -->
-<!-- El script mágico -->
-<script id=js-dispatcher src='./scripts/scripts.js'></script>
+-->
+
+
+</div><!-- importante god -->
 </body>
-</html>
+<html>
