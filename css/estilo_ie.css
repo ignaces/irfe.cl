@@ -1,0 +1,150 @@
+/*
+* Página de inicio
+* Intranet - Internet
+* Instituto Regional Federico Errázuriz
+*
+* Copyright (c) 2011 Instituto Regional Federico Errázuriz
+* http://irfe.cl
+*
+* Creado por Ignacio Trujillo
+* 4° Medio C
+*/
+
+body {
+background-image:url(images/gradient.png);
+}
+
+.god{
+padding-top: 9px;
+}
+
+.principal {
+background-image:url(box/1.png);
+background-color:#FFFFFF;
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-right: 1px solid;
+border-top: 1px solid;
+border-color:#CCCCCC;
+margin: 0 auto;
+width: 980px;
+height: 496px;
+}
+
+.barradown {
+padding-top:15px;
+margin: 0 auto;
+width:980px;
+}
+
+.mark2 {
+padding-left: 245px;
+}
+
+#facebookbox {
+background-color:#3B5998;
+text-align: center;
+width: 130px;
+height: 40px;
+position:absolute;
+}
+
+
+.googlebox {
+text-align: left;
+background-color:#000000;
+width: 235px;
+height: 40px;
+}
+
+
+input[type="text"] {
+background-color:white;
+color:black;
+width: 110px;
+font-family: Tahoma;
+font-size: 12px;
+margin-bottom:4px;
+
+
+}
+
+
+input[align=absmiddle] {
+vertical-align:middle;
+}
+
+input[type="image"] {
+padding-top: 4px;
+padding-left:1px;
+}
+
+
+a {
+text-decoration: none;
+color:#000000;
+border:0;
+}
+
+.tweetbox {
+background-color:transparent;
+margin: 0 auto;
+width: 980px;
+height: 24px;
+border:solid;
+border-width:1px;
+border-color:#CCCCCC;
+position: static;
+padding-top: 2px;
+
+}
+
+#tweet {
+font-family: 'Segoe UI Light', Tahoma;
+font-size: 14px;
+width:980px;
+text-align:center;
+vertical-align: middle;
+
+
+}
+
+ul, li {
+list-style-type: none;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:10px;
+margin-top:0px;
+}
+
+
+
+
+
+.slogan {
+padding-top: 15px;
+text-align:center;
+background-image:url(images/slogan.png);
+background-position:center;
+background-repeat:no-repeat;
+height: 8px;
+width: 980px;
+margin: 0 auto;
+}
+
+.footer {
+font: 11px 'tweet_status_font';
+color:#333333;
+}
+
+#controls, #cf,.shadow {
+display:none;
+}
+
+#descargaralgomejor {
+padding-top: 20px;
+padding-left: 20px;
+}
+
+
+/* Fin */

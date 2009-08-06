@@ -1,11 +1,19 @@
-/* Creado por Ignacio Trujillo */
+/*
+* Página de inicio
+* Intranet - Internet
+* Instituto Regional Federico Errázuriz
+*
+* Copyright (c) 2011 Instituto Regional Federico Errázuriz
+* http://irfe.cl
+*
+* Creado por Ignacio Trujillo
+* 4° Medio C
+*/
 
-@font-face { font-family: 'tweet_status_font'; src: url('fonts/tweet_status.otf'); }
-@font-face { font-family: '24_font_like'; src: url('http://static.irfe.cl/fonts/countdown/clock_itr.otf'); }
+@font-face { font-family: 'tweet_status_font'; src: url('http://static.irfe.cl/fonts/inicio/tweet_status.otf'); }
 
-html, body {
+body {
 background-image:url(images/gradient.png);
-cursor:url('mac.cur');
 }
 
 .god{
@@ -14,26 +22,26 @@ padding-top: 9px;
 
 .principal {
 background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.42, #F5F5F5),
-    color-stop(0.99, #FFFFFF)
+linear,
+left bottom,
+left top,
+color-stop(0.42, #F5F5F5),
+color-stop(0.99, #FFFFFF)
 );
 background-image: -moz-linear-gradient(
-    center bottom,
-    #F5F5F5 42%,
-    #FFFFFF 99%
+center bottom,
+#F5F5F5 42%,
+#FFFFFF 99%
 );
 
 margin: 0 auto;
 width: 980px;
 height: 496px;
- /* borde css3 */
+/* borde css3 */
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
- /* sombra del borde */
+/* sombra del borde */
 -webkit-box-shadow: rgba(0,0,0,0.2) 1px 2px 10px;
 -moz-box-shadow: rgba(0,0,0,0.2) 1px 2px 10px;
 box-shadow: rgba(0,0,0,0.2) 1px 2px 10px;
@@ -42,11 +50,31 @@ box-shadow: rgba(0,0,0,0.2) 1px 2px 10px;
 .barradown {
 padding-top:15px;
 margin: 0 auto;
-width: 980px;
+width:980px;
 }
 
-.googlebox {
+.mark2 {
+padding-left: 253px;
+}
+
+#facebookbox {
+background-color:#3B5998;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 text-align: center;
+width: 130px; /* preferible 245px para 980/4=245 (4 sectores) */
+height: 40px;
+/* box-shadow */
+-webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+-moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+position:absolute;
+}
+
+
+.googlebox {
+text-align: left;
 background-image: -webkit-gradient(
 linear,
 left bottom,
@@ -57,12 +85,12 @@ background-image: -moz-linear-gradient(
 center bottom,
 rgb(84,84,84) 0%,
 rgb(0,0,0) 79%);
-width: 255px; /* preferible 245px para 980/4=245 (4 sectores) */
-height: 41px;
--webkit-border-radius: 12px;
--moz-border-radius: 12px;
-border-radius: 12px;
- /* box-shadow */
+width: 244px; /* preferible 245px para 980/4=245 (4 sectores) */
+height: 40px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+/* box-shadow */
 -webkit-box-shadow: rgba(0,0,0,0.2) 1px 2px 5px;
 -moz-box-shadow: rgba(0,0,0,0.2) 1px 2px 5px;
 box-shadow: rgba(0,0,0,0.2) 1px 2px 5px;
@@ -71,39 +99,40 @@ box-shadow: rgba(0,0,0,0.2) 1px 2px 5px;
 
 input[type="text"] {
 
-border: 1px outset;
+border-top: 1px outset;
 border-bottom: 1px outset;
+border-left: 1px inset;
+border-right: 1px inset;
 border-bottom-color:#33333;
 background-color:transparent;
--webkit-border-radius: 12px;
--moz-border-radius: 12px;
-border-radius: 12px;
--webkit-box-shadow: rgba(0,0,0,0.2) 1px 1px 15px;
--moz-box-shadow: rgba(0,0,0,0.2) 1px 1px 15px;
-box-shadow: rgba(0,0,0,0.2) 0px 1px 15px;
-font: -webkit-small-control;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+border-radius: 9px;
+-webkit-box-shadow: rgba(0,0,0,0.2) 1px 2px 15px;
+-moz-box-shadow: rgba(0,0,0,0.2) 1px 2px 15px;
+box-shadow: rgba(0,0,0,0.2) 0px 2px 15px;
 color:#FFFFFF;
-width: 105px;
+width: 110px;
+font-family: "lucida grande", "Lucida Sans Unicode", tahoma,verdana,arial,sans-serif;
+font-size: 12px;
+margin-top: 3px;
 }
 
 
 input[align=absmiddle] {
-vertical-align: middle;
+vertical-align:middle;
 }
 
 input[type="image"] {
-padding-top: 2px;
+padding-top: 4px;
+padding-left:1px;
 }
 
-input[type="text"]:focus {  
--webkit-border-radius: 12px;
--moz-border-radius: 12px;
-border-radius: 12px;
-}
 
 a {
 text-decoration: none;
 color:#000000;
+border:0;
 }
 
 a:-webkit-any-link  {
@@ -111,41 +140,44 @@ color: #000000;
 text-decoration:none;
 }
 
-#tweet {
-background-image: -webkit-gradient(
-linear,
-left bottom,
-left top,
-color-stop(0.23, #F2F2F2),
-color-stop(0.62, #FFFFFF));
-background-image: -moz-linear-gradient(
-center bottom,
-#F2F2F2 23%,
-#FFFFFF 62%);
+.tweetbox {
+background-color:transparent;
 margin: 0 auto;
 width: 980px;
+height: 24px;
+border:solid;
+border-width:1px;
+border-color:#CCCCCC;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
--webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
--moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-font: 14px 'tweet_status_font';
+position: static;
+padding-top: 2px;
+
 }
 
-#tweet ul {
-list-style: none;
+#tweet {
+-webkit-font-smoothing:antialiased;
+font-family: 'tweet_status_font';
+font-size: 14px;
+width:980px;
+text-align:center;
 vertical-align: middle;
-}
-#tweet li {
-list-style: none;
-padding-top: 1px;
-padding-bottom: 1px;
-vertical-align: middle;
+
+
 }
 
-#loadingtweet {
-padding-top: 3px;
+ul, li {
+list-style-type: none;
+-webkit-margin-before: 0px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 10px;
+-webkit-padding-start:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:10px;
+margin-top:0px;
 }
 
 
@@ -154,18 +186,18 @@ padding-top: 3px;
 /* Presentador Interactivo */
 
 @-webkit-keyframes cf3FadeInOut {
-	0% {
-		opacity:1;
-	}
-	45% {
-		opacity:1;
-	}
-	55% {
-		opacity:0;
-	}
-	100% {
-		opacity:0;
-	}
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
 
 }			
 #cf3 {
@@ -186,10 +218,6 @@ left: 0;
 transition: opacity 1s ease-in-out;
 }
 
-.hover, img {
--webkit-user-select: none;
--webkit-touch-callout: none;
-}
 
 #cf3 img.top {
 -webkit-animation-name: cf3FadeInOut;
@@ -275,9 +303,9 @@ margin:0 auto;
 position:absolute;
 left:0;
 -webkit-transition: opacity 0.5s ease-in-out;
--moz-transition: opacity 0.5s ease-in-out;
--o-transition: opacity 0.5s ease-in-out;
-transition: opacity 0.5s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-o-transition: opacity 1s ease-in-out;
+transition: opacity 1s ease-in-out;
 opacity:0;
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 filter: alpha(opacity=0);	
@@ -285,7 +313,7 @@ filter: alpha(opacity=0);
 -moz-border-radius: 10px;
 border-radius: 10px;	
 }
-	
+
 #cf img.opaque {
 opacity:1;
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
@@ -293,6 +321,8 @@ filter: alpha(opacity=1);
 }	
 
 /* Fin Presentador 2 */
+
+
 
 
 /* Fin */
