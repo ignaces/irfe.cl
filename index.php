@@ -6,95 +6,147 @@
         <meta name="viewport" content="width=1024" user-scalable="no"/>   
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         
-        <title>IRFE</title>
+        <title>IRFE.cl</title>
         <meta name="Keywords" content="IRFE, instituto regional federico errazuriz, santa cruz, chile, colegio, instituto, colegio católico" /> 
         <meta name="Description" content="Página de inicio del Instituto Regional Federico Errázuriz. Proporciona información útil." />
-        <meta name="Author" content="Ignacio Trujillo" />
+        <meta name="Author" content="Ignacio Trujillo ; ignacio[at]dr[dot]com" />
         
         <link rel="shortcut icon" href="http://static.irfe.cl/favicon.ico" /> 
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" /> 
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" type="text/css" href="css/estilo_ie.css" />
-        <![endif]-->
-        <script src="http://static.irfe.cl/js/jquery-1.5.js"></script> 
-        <script src="http://static.irfe.cl/js/modernizr-newest.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilito.css" />
+        <link rel="stylesheet" type="text/css" href="css/segundo.css" /> 
+        <!--[if lte IE 8]><![endif]-->
+
         <script src="http://static.irfe.cl/js/twitter.min.js" type="text/javascript"></script> 
-    </head>
+        <script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-    <body>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-			<script type="text/javascript" charset="utf-8"> 
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+        </script>
+</head>
+    
+    
+<script type="text/javascript" charset="utf-8"> 
                 getTwitters('tweet', { 
                 id: 'irfe', 
                 count: 1, 
                 enableLinks: true, 
                 ignoreReplies: true, 
                 clearContents: false,
-                template: '<img style="padding-top:0px;" src="images/tweet4.png" height="16px" /> <a href="http://twitter.com/%user_screen_name%/statuses/%id%/">"%text%"</a>'
+                template: '<img style="padding-top:0px;" src="images/tweet.png" height="16px" /> "%text%"'
                 });
-            </script>
+            </script><body onLoad="MM_preloadImages('images/links2/bz.png','images/links2/cz.png','images/links2/dz.png')">
             
-            <div class="tweetbox" align="center">
-                <div id="tweet" align="center">
-                </div>
-            </div>
+            
+<div align="right" class="hiper">
 
-        <div class="god">
-            <div class="principal">
+<img style="float:left" src="images/links2/title.png" />
+<a href="http://irfe.cl/historia" target="_top" onClick="MM_nbGroup('down','group1','Historia','',1)" onMouseOver="MM_nbGroup('over','Historia','images/links2/bz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/b.png" alt="" name="Historia"  border="0" onload=""></a><a href="http://irfe.cl/cc" target="_top" onClick="MM_nbGroup('down','group1','CC','',1)" onMouseOver="MM_nbGroup('over','CC','images/links2/cz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/c.png" alt="" name="CC" border="0" onload=""></a><a href="http://noticias.irfe.cl" target="_top" onClick="MM_nbGroup('down','group1','Noticias','',1)" onMouseOver="MM_nbGroup('over','Noticias','images/links2/dz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/d.png" alt="" name="Noticias" border="0" onload="" style="padding-right:10px;"></a>
+</div>
+<div class="principal">
+<div id="frame">
+<div id="gallery">
 
-				<script> 
-                    $(document).ready(function() {
-                    $("#controls span").click(function() {
-                    $("#cf img").removeClass("opaque");
-                    var imageToShow = $(this).attr("id").replace("for-", "");
-                    console.log(imageToShow);
-                    $("#cf #"+imageToShow).addClass("opaque");
-                    $("#controls span").removeClass("selected");
-                    $(this).addClass("selected");			
-                    }); });
-                </script> 
-                
-                <!--[if lte IE 8]>
-                <a href="http://www.apple.com/la/safari/download/"><img id="descargaralgomejor" style="border:0;" src="http://images.apple.com/la/safari/images/button_downloadsafari_20100607.png" height="100" /></a>
-                <![endif]-->
+	<a href=""><img class="p1" src="images/history/logo.jpg" alt="image 1" /></a>
 
-                <div id="cf" class="shadow">
-                    <img id="image-1" src="http://dl.dropbox.com/u/5990450/inicioirfe/1.png" class="opaque"/>
-                    <img id="image-2" src="http://dl.dropbox.com/u/5990450/inicioirfe/2.png"/> 
-                    <img id="image-3" src="http://dl.dropbox.com/u/5990450/inicioirfe/3.jpg" /> 
-                    <img id="image-4" src="http://dl.dropbox.com/u/5990450/inicioirfe/4.jpg" /> 
+	<a href="#x2"><img class="p2" src="images/history/1.png" alt="image 2" /></a>
+
+	<a href="#x3"><img class="p3" src="images/history/iglesiakids.jpg" alt="image 3" /></a>
+
+	<a href="#x4"><img class="p4" src="images/history/santo.jpg" alt="image 4" /></a>
+
+	<a href="#x5"><img class="p5" src="images/history/futbol1.jpg" alt="image 5" /></a>
+
+	<a href="#x6"><img class="p6" src="images/history/zaballa.png" alt="image 6" /></a>
+
+	<a href="#x7"><img class="p7" src="images/history/semanasanta.jpg" alt="image 7" /></a>
+
+	<a href="#x8"><img class="p8" src="images/history/fachadareconstruccion.jpg" alt="image 8" /></a>
+
+	<a href="#x9"><img class="p9" src="images/history/ninos.jpg" alt="image 9" /></a>
+
+	<a href="#x10"><img class="p10" src="images/history/2.png" alt="image 10" /></a>
+
+
+</div>
+</div>
+</div>
+
+				<div class="contenedortweet">
+                <div id="tweetbox" align="center"> 
+                <div id="tweet" align="center"> 
                 </div> 
-                
+            </div> </div>
 
-                <p id="controls"> 
-                    <span class="selected" id="for-image-1"><img src="images/controls/1.png" /></span> 
-                    <span id="for-image-2"><img src="images/controls/2.png" /></span> 
-                    <span id="for-image-3"><img src="images/controls/3.png" /></span> 
-                    <span id="for-image-4"><img src="images/controls/4.png" /></span> 
-                </p>
+<div class="secundario">
+<div align="center" id="publi">
+<a href="http://irfe.cl/web/"><img src="images/wifilibreirfe.jpg" /></a>
+<a href="http://twitter.com/irfe"><img src="images/irfe.jpg" /></a>
+<a href="http://facebook.com/irfesantacruz"><img src="images/fb.jpg" /></a>
+<a href="http://youtube.com/irfesantacruz"><img src="images/yb.png" /></a>
+</div>
+</div>
 
-            </div>
+<div class="end">
+<div id="infocolegio">
+Av. Errázuriz 670 - Santa Cruz de Chile <font size="+1" color="#999999">|</font> <a href="mailto:irfe@irfe.cl">irfe@irfe.cl</a> <font size="+1" color="#999999">|</font> Teléfonos: (72)-822253 y (72)-821731
+</div>
+
+<div id="footer">
+Copyright © 2011 Instituto Regional Federico Errázuriz. Todos Los Derechos Reservados.<br />
+Diseñado por <a href="http://irfe.cl/about/ignacio">Ignacio Trujillo Rojas</a>. <i>Página aún en construcción.</i>
+</div></div>
 
 
-            <div class="barradown">
-            
-                <div class="mark2">
-                    <div id="facebookbox">
-                        <a href="http://facebook.com/irfesantacruz"><img style="border:0; padding-top:5px; padding-right:2px;" src="images/facebo.png" /></a>
-                    </div>
-                </div>
 
-                <div class="googlebox" align="left">
-                    <form method="get" action="http://www.google.com/search">
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="oe" value="UTF-8" />
-                    <a href="http://google.cl"><img style="padding-top:3px; padding-left:1px;" src="images/google.png" alt="Buscar en Google" align="absmiddle" border="0" /></a>
-                    <input align="absmiddle" type="text" name="q" size="15" maxlength="255" value="" autocomplete="off" autofocus spellcheck="off" />
-                    <input type="image" src="images/logo_lupa.png" align="absmiddle" name="btnG" value="" />
-                    </form>
-                </div>
 
-            </div>
-        </div>
-    </body>
+
+
+</body>
+
 </html>

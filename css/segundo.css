@@ -1,0 +1,43 @@
+
+.thrColLiq #container {
+width: 980px;
+margin: 0 auto; 
+border: 1px solid #000000;
+text-align: left;
+}
+
+.thrColLiq #sidebar1 { {
+float: left;
+width: 22%;
+background: #EBEBEB;
+padding: 15px 0;
+}
+.thrColLiq #sidebar2 {
+float: right; 
+width: 23%; 
+background: #EBEBEB; 
+padding: 15px 0;
+}
+.thrColLiq #sidebar1 p, .thrColLiq #sidebar1 h3, .thrColLiq #sidebar2 p, .thrColLiq #sidebar2 h3 {
+margin-left: 10px; 
+margin-right: 10px;
+}
+thrColLiq #mainContent {
+margin: 0 24% 0 23.5%;
+}
+
+.fltrt {
+float: right;
+margin-left: 8px;
+}
+.fltlft {
+float: left;
+margin-right: 8px;
+}
+.clearfloat { 
+clear: both;
+height: 0;
+font-size: 1px;
+line-height: 0px;
+}
+
