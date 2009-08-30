@@ -1,152 +1,118 @@
-﻿<!DOCTYPE html> 
+<!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=1024" user-scalable="no"/>   
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        
-        <title>IRFE.cl</title>
-        <meta name="Keywords" content="IRFE, instituto regional federico errazuriz, santa cruz, chile, colegio, instituto, colegio católico" /> 
-        <meta name="Description" content="Página de inicio del Instituto Regional Federico Errázuriz. Proporciona información útil." />
-        <meta name="Author" content="Ignacio Trujillo ; ignacio[at]dr[dot]com" />
-        
-        <link rel="shortcut icon" href="http://static.irfe.cl/favicon.ico" /> 
-        <link rel="stylesheet" type="text/css" href="css/estilito.css" />
-        <link rel="stylesheet" type="text/css" href="css/segundo.css" /> 
-        <!--[if lte IE 8]><![endif]-->
-
-        <script src="http://static.irfe.cl/js/twitter.min.js" type="text/javascript"></script> 
-        <script type="text/javascript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_nbGroup(event, grpName) { //v6.0
-  var i,img,nbArr,args=MM_nbGroup.arguments;
-  if (event == "init" && args.length > 2) {
-    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
-      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
-      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
-      nbArr[nbArr.length] = img;
-      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-        if (!img.MM_up) img.MM_up = img.src;
-        img.src = img.MM_dn = args[i+1];
-        nbArr[nbArr.length] = img;
-    } }
-  } else if (event == "over") {
-    document.MM_nbOver = nbArr = new Array();
-    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
-      nbArr[nbArr.length] = img;
-    }
-  } else if (event == "out" ) {
-    for (i=0; i < document.MM_nbOver.length; i++) {
-      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
-  } else if (event == "down") {
-    nbArr = document[grpName];
-    if (nbArr)
-      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
-    document[grpName] = nbArr = new Array();
-    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
-      nbArr[nbArr.length] = img;
-  } }
-}
-//-->
-        </script>
-</head>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="device-width" content="1280" user-scalable="no"/> 
+    <meta name="viewport" content="width=1180" user-scalable="no"/>   
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     
+    <title>IRFE.cl | Portada</title>
+    <meta name="Keywords" content="IRFE, instituto, regional, federico, errazuriz, santa, cruz, chile, colegio, instituto, catolico, centro, cristiano, ignaces, ignaciotrujillo" /> 
+    <meta name="Description" content="Sitio oficial del prestigioso Instituto Regional Federico Errázuriz, ubicado en Santa Cruz, Chile. Nuetsra meta principal es formar personas de bien, con bastos conocimientos, preparados para enfrentar los estudios superiores y fundamentalmente, basar su fe en Dios." />
+    <meta name="Author" content="Ignacio Trujillo Rojas ; ignacio[at]dr[dot]com" />
     
-<script type="text/javascript" charset="utf-8"> 
-                getTwitters('tweet', { 
-                id: 'irfe', 
-                count: 1, 
-                enableLinks: true, 
-                ignoreReplies: true, 
-                clearContents: false,
-                template: '<img style="padding-top:0px;" src="images/tweet.png" height="16px" /> "%text%"'
-                });
-            </script><body onLoad="MM_preloadImages('images/links2/bz.png','images/links2/cz.png','images/links2/dz.png')">
-            
-            
-<div align="right" class="hiper">
+    <link rel="shortcut icon" href="http://static.irfe.cl/favicon.ico" /> 
+    
+    <script src="static/js/twitter.min.js" type="text/javascript"></script>  
+    <script src="static/js/reflection.js" type="text/javascript"></script>
+    <script src="static/js/getwitter.js" type="text/javascript"></script>
+    <script src="static/js/jquery.min.js"></script> 
+    <script src="static/js/presentador.js"></script>
+    <!--[if lte IE 8]>
+    <style media="all" type="text/css">@import "static/css/explorer.css";</style>
+    <![endif]-->
+    <style media="all" type="text/css">@import "static/css/navbar.css";</style>
+    <style media="all" type="text/css">@import "static/css/html_body.css";</style>
+    <style media="all" type="text/css">@import "static/css/tweetbox.css";</style>
+    <style media="all" type="text/css">@import "static/css/presentador_html5.css";</style>
+    <style media="all" type="text/css">@import "static/css/footer.css";</style>
+    <style media="all" type="text/css">@import "static/css/char.css";</style>
+    <style media="all" type="text/css">@import "static/css/webkit_animacion.css";</style>
+        
+</head> 
 
-<img style="float:left" src="images/links2/title.png" />
-<a href="http://irfe.cl/historia" target="_top" onClick="MM_nbGroup('down','group1','Historia','',1)" onMouseOver="MM_nbGroup('over','Historia','images/links2/bz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/b.png" alt="" name="Historia"  border="0" onload=""></a><a href="http://irfe.cl/cc" target="_top" onClick="MM_nbGroup('down','group1','CC','',1)" onMouseOver="MM_nbGroup('over','CC','images/links2/cz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/c.png" alt="" name="CC" border="0" onload=""></a><a href="http://noticias.irfe.cl" target="_top" onClick="MM_nbGroup('down','group1','Noticias','',1)" onMouseOver="MM_nbGroup('over','Noticias','images/links2/dz.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/links2/d.png" alt="" name="Noticias" border="0" onload="" style="padding-right:10px;"></a>
+<body>
+<!-- barradenavegacion -->
+<div id="navbar">
+		<ul id="navbarul"> 
+			<li id="navbarli">
+            	<a href="">Portada</a>
+            </li>
+			<li id="navbarli">
+            	<a href="http://irfe.cl/historia" title="Historia del IRFE">Historia</a>
+            </li> 
+			<li id="navbarli">
+            	<a href="http://noticias.irfe.cl">Noticias</a>
+            </li>
+            <li id="navbarli">
+            	<a href="http://irfe.cl/calendario">Calendario</a>
+            </li>
+			<li id="navbarli">
+            	<a href="http://irfe.cl/calendario">Alumnado</a>
+            </li> 
+            <li id="navbarli">
+            	<a href="http://twitter.com/irfe" title="S&iacute;guenos en Twitter">
+                	<img style="margin-top:-2px; border:0px;" src="static/img/index1/twitter.png"/>
+                </a>
+            </li>
+            <li id="navbarli">
+            	<a href="http://facebook.com/irfesantacruz" title="Hazte fan de nosotros en Facebook">
+            		<img style="margin-top:-2px; border:0px" src="static/img/index1/facebook.png" />
+                </a>
+             </li>
+            <li id="navbarli">
+            	<a href="http://youtube.com/irfesantacruz" title="Ve nuestros videos en Youtube">
+            		<img style="margin-top:-2px; border:0px" src="static/img/index1/youtube.png" />
+                </a>
+            </li>
+		</ul>
 </div>
-<div class="principal">
-<div id="frame">
-<div id="gallery">
+<!-- /barradenavegacion -->
 
-	<a href=""><img class="p1" src="images/history/logo.jpg" alt="image 1" /></a>
-
-	<a href="#x2"><img class="p2" src="images/history/1.png" alt="image 2" /></a>
-
-	<a href="#x3"><img class="p3" src="images/history/iglesiakids.jpg" alt="image 3" /></a>
-
-	<a href="#x4"><img class="p4" src="images/history/santo.jpg" alt="image 4" /></a>
-
-	<a href="#x5"><img class="p5" src="images/history/futbol1.jpg" alt="image 5" /></a>
-
-	<a href="#x6"><img class="p6" src="images/history/zaballa.png" alt="image 6" /></a>
-
-	<a href="#x7"><img class="p7" src="images/history/semanasanta.jpg" alt="image 7" /></a>
-
-	<a href="#x8"><img class="p8" src="images/history/fachadareconstruccion.jpg" alt="image 8" /></a>
-
-	<a href="#x9"><img class="p9" src="images/history/ninos.jpg" alt="image 9" /></a>
-
-	<a href="#x10"><img class="p10" src="images/history/2.png" alt="image 10" /></a>
-
-
+<!-- presentador -->
+<div id="wraper">
+    <div id="presentador"> 
+        <ul class="slides"> 
+            <li>
+                <img src="static/img/index1/photos/2/1.jpg" width="1080" height="496">
+                    <div id="inputpresentacion">
+                        <p id="contenidoinput">D&iacute;a Del Alumno 2011</p>
+                    </div>
+                </img>
+            </li>
+            <li><img src="static/img/index1/transparent.png" width="1080" height="496"/>
+            </li> 
+            <li><img src="static/img/index1/photos/3.jpg" width="1080" height="496"/>
+            </li> 
+            <li><img src="static/img/index1/photos/5.png" width="1080" height="496"/>
+            </li> 
+        </ul> 
+        <span class="arrow previous"></span> 
+        <span class="arrow next"></span> 
+    </div>
 </div>
+<!-- /presentador -->
+
+<!-- ultimotweet -->
+<div id="tweetbox">
+	<div id="tweet">
+    </div>
 </div>
+<!-- /ultimotweet -->
+
+<!-- footer -->
+<div id="barrafooter">
+	<div id="infocolegio">
+		<p>Avenida Errázuriz 670 - Santa Cruz de Chile <em>|</em> <a href="mailto:irfe@irfe.cl">irfe@irfe.cl</a> <em>|</em> Tel: (72)-822253 y (72)-821731<p>
+	</div>
+
+	<div id="footer">
+		<p>Copyright <strong>©</strong> 2011 Instituto Regional Federico Errázuriz. Derechos Reservados.</p>
+		<p>Diseñado por <a href="http://twitter.com/ignaces">Ignacio Trujillo Rojas</a>. v.0.99 β</p>
+	</div>
 </div>
-
-				<div class="contenedortweet">
-                <div id="tweetbox" align="center"> 
-                <div id="tweet" align="center"> 
-                </div> 
-            </div> </div>
-
-<div class="secundario">
-<div align="center" id="publi">
-<a href="http://irfe.cl/web/"><img src="images/wifilibreirfe.jpg" /></a>
-<a href="http://twitter.com/irfe"><img src="images/irfe.jpg" /></a>
-<a href="http://facebook.com/irfesantacruz"><img src="images/fb.jpg" /></a>
-<a href="http://youtube.com/irfesantacruz"><img src="images/yb.png" /></a>
-</div>
-</div>
-
-<div class="end">
-<div id="infocolegio">
-Av. Errázuriz 670 - Santa Cruz de Chile <font size="+1" color="#999999">|</font> <a href="mailto:irfe@irfe.cl">irfe@irfe.cl</a> <font size="+1" color="#999999">|</font> Teléfonos: (72)-822253 y (72)-821731
-</div>
-
-<div id="footer">
-Copyright © 2011 Instituto Regional Federico Errázuriz. Todos Los Derechos Reservados.<br />
-Diseñado por <a href="http://irfe.cl/about/ignacio">Ignacio Trujillo Rojas</a>. <i>Página aún en construcción.</i>
-</div></div>
-
-
-
-
-
-
-</body>
-
-</html>
+<!-- /footer -->
+ 
+</body> 
+</html> 

@@ -1,0 +1,97 @@
+/* Presentador de imágenes en HTML5 + CSS3
+Implementado por Ignacio Trujillo */
+
+#wraper {
+width:1100px;
+margin: 0 auto;
+position:relative;
+height:516px;
+}
+
+#presentador{
+height:516px;
+margin:10px auto 0;
+position:relative;
+width:1100px;
+-moz-box-shadow:rgba(0,0,0,1) 0px 2px 20px;
+-webkit-box-shadow:rgba(0,0,0,1) 0px 2px 20px;
+box-shadow: rgba(0,0,0,1) 0px 2px 20px;
+border-color:#999999;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+background-image: -webkit-gradient(
+linear,
+left bottom,
+left top,
+color-stop(0.00, #333333),
+color-stop(0.43, #f8f8f8),
+color-stop(0.50, #f8f8f8),
+color-stop(0.58, #f8f8f8),
+color-stop(1.00, #333333)
+);
+background-image: -moz-linear-gradient(
+center bottom,
+white 0%,
+#f8f8f8 43%,
+#f8f8f8 50%,
+#f8f8f8 58%,
+transparent 100%
+);
+}
+
+#presentador ul{
+height:496px;
+left:10px;
+right:10px;
+list-style:none outside none;
+overflow:hidden;
+position:absolute;
+top:10px;
+bottom:10px;
+width:1100px;
+}
+
+#presentador img {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;;
+}
+
+#presentador li{
+position:absolute;
+display:none;
+z-index:10;
+}
+
+#presentador li:first-child{
+display:block;
+z-index:1000;
+}
+
+#presentador .slideActive{
+z-index:1000;
+}
+
+#presentador canvas{
+display:none;
+position:absolute;
+z-index:100;
+}
+
+#presentador .arrow{
+height:68.5px;
+width:50px;
+position:absolute;
+background:url('../img/index1/arrows.png') no-repeat;
+top:50%;
+margin-top:-43px;
+cursor:pointer;
+z-index:5000;
+}
+
+#presentador .previous{ background-position:left top;margin-left:-49px;}
+#presentador .previous:hover{ background-position:left bottom;}
+
+#presentador .next{ background-position:right top;right:-49px;}
+#presentador .next:hover{ background-position:right bottom;}

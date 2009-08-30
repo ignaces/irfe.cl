@@ -1,0 +1,33 @@
+#tweetbox {
+background-image:url(../img/index1/min.png);
+background-repeat:repeat-x;
+margin:0 auto;
+margin-top:15px;
+margin-bottom:15px;
+width: 1000px;
+height: 24px;
+border:outset;
+border-width:1px;
+border-color:#CCCCCC;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding-top: 4px;
+
+}
+
+#tweet {
+height:24px;
+font: 14px segoein, Sans-Serif;
+text-align: center;
+color: white;
+text-shadow: 3px 3px 5px #333;
+width:1000px;
+text-align:center;
+-webkit-font-smoothing:antialiased;
+vertical-align:baseline;
+}
+
+ul {
+list-style:none;
+}
