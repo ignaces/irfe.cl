@@ -1,1 +1,1 @@
-<!-- ultimotweet_global --><div id="tweetbox"><div id="tweet"></div></div><!-- /ultimotweet_global -->
+<!--ultimotweet_global--><div id="tweetbox"><div id="tweet"></div></div><!--/ultimotweet_global-->
